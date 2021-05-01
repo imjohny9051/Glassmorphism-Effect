@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+  background-image: url('john-towner-JgOeRuGD_Y4-unsplash.jpg');
+  background-size: cover;
+  height: calc(100vh - 20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
+#moreText {
+  display: none;
+}
+.card {
+  width: 450px;
+  padding: 20px;
+  background: rgba(255,255,255,0.2);
+  box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+}
+h1, p {
+  color: #fff;
+  transition: transform .5s;
+}
+button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: #74a6ff;
+  font-size: 1rem;
+}
+button:hover {
+  transform: scale(1.1);
+}

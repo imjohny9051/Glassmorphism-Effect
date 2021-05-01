@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Glassmorphism Effect</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="card">
+      <h1>GLASSMORPHISM</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Elit scelerisque mauris pellentesque pulvinar pellentesque habitant.
+        <span id="dots">....</span>
+        <span id="moreText">
+          Id neque aliquam vestibulum morbi blandit cursus risus at ultrices.
+          Vel eros donec ac odio tempor orci. At lectus urna duis convallis convallis tellus id interdum velit.
+        </span>
+      </p>
+      <button type="button" id="button" onClick="read()">Read More</button>
+    </div>
+
+    <!-- javascript function for read more functionality -->
+    <script type="text/javascript">
+      var i=0;
+      function read() {
+        if(!i) {
+          document.getElementById('moreText').style.display="inline";
+          document.getElementById('dots').style.display="none";
+          document.getElementById('button').innerHTML="Read Less";
+          i = 1;
+        }
+        else {
+          document.getElementById('moreText').style.display="none";
+          document.getElementById('dots').style.display="inline";
+          document.getElementById('button').innerHTML="Read More";
+          i = 0;
+        }
+      }
+    </script>
+  </body>
+</html>
